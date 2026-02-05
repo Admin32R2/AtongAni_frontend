@@ -1,0 +1,293 @@
+.farmer-orders {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.farmer-orders h3 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.orders-error {
+  background-color: #fee;
+  color: #c33;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #c33;
+}
+
+.success-message {
+  background-color: #eef9f1;
+  color: #1b5e20;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #28a745;
+}
+
+.empty-orders {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  color: #999;
+}
+
+.empty-orders p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.empty-hint {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.pending-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.farmer-order-card {
+  border: 2px solid #ffa500;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fffaf0;
+  box-shadow: 0 2px 4px rgba(255, 165, 0, 0.1);
+}
+
+.order-customer-info {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ffe0b2;
+}
+
+.order-customer-info h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.customer-name {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.order-time {
+  margin: 4px 0;
+  font-size: 12px;
+  color: #999;
+}
+
+.order-items-section {
+  margin: 16px 0;
+}
+
+.order-items-section h5 {
+  margin: 0 0 12px 0;
+  color: #333;
+  font-size: 14px;
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.farmer-order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid #ffe0b2;
+  border-radius: 4px;
+}
+
+.item-detail {
+  flex: 1;
+}
+
+.item-name {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.item-quantity {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+}
+
+.item-price {
+  text-align: right;
+}
+
+.item-price p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.subtotal {
+  font-weight: bold;
+  color: #333;
+  font-size: 15px;
+}
+
+.order-total-section {
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid #ffe0b2;
+  border-radius: 4px;
+  margin: 12px 0;
+}
+
+.order-total {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.order-total strong {
+  color: #d97706;
+  font-size: 16px;
+}
+
+.farmer-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.approve-btn,
+.reject-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.approve-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.approve-btn:hover {
+  background-color: #218838;
+  box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3);
+}
+
+.approve-btn:active {
+  transform: translateY(1px);
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.reject-btn:hover {
+  background-color: #c82333;
+  box-shadow: 0 2px 4px rgba(220, 53, 69, 0.3);
+}
+
+.reject-btn:active {
+  transform: translateY(1px);
+}
+
+.reject-form {
+  flex: 1;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #dc3545;
+}
+
+.reject-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 13px;
+  min-height: 80px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.reject-textarea:focus {
+  outline: none;
+  border-color: #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.reject-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.confirm-reject-btn,
+.cancel-reject-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.confirm-reject-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.confirm-reject-btn:hover {
+  background-color: #c82333;
+}
+
+.cancel-reject-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancel-reject-btn:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .farmer-order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-price {
+    width: 100%;
+    margin-top: 8px;
+    text-align: left;
+  }
+
+  .farmer-actions {
+    flex-direction: column;
+  }
+
+  .approve-btn,
+  .reject-btn {
+    width: 100%;
+  }
+}

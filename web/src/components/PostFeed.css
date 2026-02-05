@@ -1,0 +1,114 @@
+.post-feed {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.feed-header {
+  margin-bottom: 20px;
+  padding: 0 16px;
+}
+
+.feed-header h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  color: #333;
+}
+
+.feed-filters {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.filter-btn.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.feed-error {
+  margin: 0 16px 16px;
+  padding: 12px;
+  background: #ffebee;
+  color: #d32f2f;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 40px 16px;
+  color: #999;
+  font-size: 14px;
+}
+
+.no-posts {
+  text-align: center;
+  padding: 60px 16px 40px;
+  color: #999;
+}
+
+.no-posts p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.no-posts-hint {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.posts-list {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loading-more {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .post-feed {
+    margin: 0 auto;
+  }
+
+  .feed-header {
+    margin-bottom: 16px;
+    padding: 0 12px;
+  }
+
+  .feed-header h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .filter-btn {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .posts-list {
+    padding: 0 12px;
+  }
+}

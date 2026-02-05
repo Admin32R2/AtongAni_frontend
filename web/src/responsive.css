@@ -1,0 +1,74 @@
+/* Global Mobile Optimizations */
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+body {
+  padding: max(env(safe-area-inset-top), 0) 
+           max(env(safe-area-inset-right), 0)
+           max(env(safe-area-inset-bottom), 0)
+           max(env(safe-area-inset-left), 0);
+  overscroll-behavior: contain;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Safe scrolling area */
+.dashboard-container {
+  padding-bottom: max(env(safe-area-inset-bottom), 0);
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ensure root container does not exceed screen width */
+  #root {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  body {
+    font-size: 13px;
+  }
+
+  /* Login page container */
+  .login-container {
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    min-height: 100vh;
+  }
+
+  /* Dashboard page container */
+  .dashboard-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    font-size: 12px;
+  }
+
+  #root {
+    overflow-x: hidden;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
